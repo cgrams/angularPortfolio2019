@@ -1,0 +1,17 @@
+@media all and (max-width: 1050px) { 
+   #forceSizeButterfly {
+    	width: 4em;
+	}
+}
+
+img.flipButterfly {
+    font-size: 6em;
+    width: 5em;
+    transform-style: preserve-3d;
+
+}
+
+.flipButterfly{
+        float: left;
+
+}

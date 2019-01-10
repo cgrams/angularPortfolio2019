@@ -1,0 +1,197 @@
+mat-toolbar.coolToolBar.mat-toolbar.mat-toolbar-single-row {
+    background: #272727;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.lineHistoryPadding {
+    margin: 0 5%;
+}
+div#toFadeOutCurtain {
+    height: 50px;
+    background: linear-gradient(to right, rgba(304,0,0,0), rgb(0, 0, 0));
+    position: relative;
+    bottom: 36px;
+    width: 30%;    
+}
+div#toFadeOutCurtain2 {
+    width: 70%;
+    height: 80px;
+    background: black;
+    bottom: 36px;
+    position: relative;
+}
+ .hiddenContainer {
+    display: flex;
+    position: relative;
+    width: 200%;
+    right: 100%;    
+}
+
+
+.oneYearText{
+    grid-column-start: 12;
+    grid-column-end: 15;
+    right: 10px;
+    position: relative;
+}
+
+li.twoYearText {
+    grid-column-start: 25;
+       grid-column-end: 28;
+       position: relative;
+       right: 7px;
+}
+li.threeYearText {
+    grid-column-start: 37;
+    grid-column-end: 42;
+    position: relative;
+    left: 25px;
+}
+li.oneYearText {
+    text-align: center;
+}
+ul.listOfJobs.jobsContainer li {
+    padding: 3px;
+}
+li.roi {
+    grid-column-start: 21;
+    grid-column-end: 29;
+    background: #543f3c;
+    color: white;
+}
+span.triangle2 {
+    grid-column-start: 24;
+}
+
+span.triangle3 {
+    grid-column-start: 36;
+    position: relative;
+    left: 3px;
+}
+
+
+li.soNet {
+    grid-column-start: 29;
+    grid-column-end: 34;
+    background: #c35b4e;
+    color: white;
+}
+.yearContainer{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(36, 2.6777%);
+    grid-template-columns: repeat(36, 2.6777%);
+    -ms-grid-rows: (2px)[10];
+    grid-template-rows: repeat(10, 2px);
+}
+span.triangle1 {
+    grid-column-start: 12;
+}
+li.bom {
+    grid-column-start: 34;
+    grid-column-end: 52;
+    background: #4a201b;
+    color: white;
+}
+li.melbourneIT {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    background: #4a201b;
+    color: white;
+}
+ul.yearBolck li {
+    font-weight: bold;
+}
+li.doCon {
+    grid-column-start: 10;
+    background: #543f3c;
+    color: white;
+    grid-column-end: 12;
+}
+li.impressPhotos {
+    grid-column-start: 10;
+    grid-column-end: 18;
+    background: #c35b4e;
+    color: white;
+}
+li.vTech {
+    grid-column-start: 18;
+    grid-column-end: 21;
+    background: #4a201b;
+    color: white;
+}
+.metaListJobsContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding-top: 7px;
+
+}
+li.punchD {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #c35b4e;
+    color: white;
+}
+.jobsContainer {
+    display: grid;
+    grid-template-columns: repeat(50, 2%);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0;
+}
+ul.listOfJobs.jobsContainer {
+    padding: 0;
+}
+.listOfJobs{
+    list-style: none;
+}
+.historyLineTitle{
+  text-align: center;
+  text-decoration: underline;
+}
+ .yearContainer span {
+    text-align: center;
+}
+span.smallerTitle {
+    font-size: 1em;
+}
+span.sizeOfLargerText {
+    font-size: 1.5em;
+}
+ h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;    
+}
+.yearBolck {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (2.6777%)[42];
+    grid-template-columns: repeat(42, 2.6777%);
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 36;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    grid-row-end: 10;
+}
+.timeLineLine{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 1px;
+    font-weight: bold;
+    width: 100%;
+    background: black;
+}  

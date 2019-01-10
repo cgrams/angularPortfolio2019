@@ -1,0 +1,19 @@
+@media all and (max-width: 1050px) {
+	svg#backgroundButterfly {
+		width: 350px;
+	}
+
+	li.even, li.odd {
+	    display: -ms-flexbox;
+	    display: -ms-grid;
+	    display: grid;
+	    align-items: center;
+	    -ms-grid-columns: 170px 60% 20px;
+	    grid-template-columns: 100px 60% 20px;
+	}
+
+	svg#Capa_1 {
+	    max-width: 350px;
+	}
+}
+ 

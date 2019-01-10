@@ -1,0 +1,95 @@
+#backgroundButterfly{
+    stroke: black;
+}
+#pathButterFlyFill{
+    fill: url(#MyGradient);
+}
+mat-toolbar.coolToolBar.mat-toolbar.mat-toolbar-single-row {
+    background: #272727;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+svg.centerSVGText {
+    display: flex;
+    height: 19px;
+}
+li.even, li.odd {
+    display: flex;
+    align-items: center;
+}
+span.smallerTitle {
+    font-size: 1em;
+}
+span.sizeOfLargerText {
+    font-size: 1.5em;
+}
+ul.skillsList {
+    list-style: none;
+    padding: 0;
+}
+.percentShown {
+    min-width: 50px;
+    margin: 0px 0 0 6px;
+}
+h5.skillSubTitles {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 0px; 
+    text-decoration: underline;   
+}
+li.even, li.odd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: grid;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-template-columns: 170px 65% 20px;
+}
+.devContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    position: relative;
+    z-index: 2;
+}
+.prodConatainer {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    position: relative;
+    z-index: 2;    
+}
+.desContainer {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    position: relative;
+    z-index: 2;    
+}
+ h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.redButterfly {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+li .mat-progress-bar {
+    display: block;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 250ms linear;
+    width: 100%;
+    margin: 10px 0;
+}

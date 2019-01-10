@@ -1,0 +1,74 @@
+app-code, app-graphics, app-web {
+    cursor: pointer;
+}
+span.spanListColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    text-align: left;
+}
+ 
+span.spanListColumn a{
+    color: red;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+span.spanListColumn a:hover{
+    color: #f75353;
+}
+.examplesContainer {
+    display: grid;
+    grid-template-columns: 1% 32% 32% 32% 1%;
+}
+
+.codingContainer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;    
+}
+.artContainer {
+    grid-column-start: 3;
+    grid-column-end: 4;    
+    text-align: center;    
+}
+
+.webProjectsContainer {
+    grid-column-start: 4;
+    grid-column-end: 5;    
+    text-align: center;    
+}
+
+h4{
+    position: relative;
+    z-index: 44;
+    font-size: 1.3em;
+    cursor: pointer;
+    background: black;
+    margin-top: 0;
+    top: 10px;
+    padding: 0 7px;        
+}
+
+.examplesContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;    
+}
+
+span.smallerTitle{
+    font-size: 1em;
+}
+
+span.sizeOfLargerText{
+    font-size: 1.5em;
+}

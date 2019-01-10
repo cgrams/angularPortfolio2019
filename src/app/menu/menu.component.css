@@ -1,0 +1,44 @@
+.menu{
+cursor: pointer; 
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:white;
+  stroke-width:5;
+  stroke-linecap:round;
+ 
+}
+.line:hover {
+      stroke:red;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1:hover .top {
+  stroke-dashoffset: -98px;
+      stroke:red;
+}
+.ham1:hover .bottom {
+  stroke-dashoffset: -138px;
+      stroke:red;
+}
+.ham2 .top {
+  stroke-dasharray: 40 121;
+}
+.ham2 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham2:hover .top {
+  stroke-dashoffset: -102px;
+    stroke:red;  
+}
+.ham2:hover .bottom {
+  stroke-dashoffset: -102px;
+      stroke:red;
+} 
+ 

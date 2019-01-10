@@ -1,0 +1,16 @@
+li.listChoice:hover{
+	color: red;
+
+}
+li.listChoice {
+    cursor: pointer;
+    line-height: 2.3em;
+    font-size: 18px;
+    transition: color .5s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}

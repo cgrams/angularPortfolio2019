@@ -1,0 +1,60 @@
+@media all and (max-width: 1050px) { 
+    div ul.listSocialMedia {
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+    }
+}
+
+.showE{
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    padding-left: 3px;
+}
+ul.listSocialMedia {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;    
+}
+li.individualSocialMedia i {
+    position: relative;
+    top: 4px;
+}
+ul.listSocialMedia li {
+    padding: 3px 15px;
+}
+a.linkSocialMedia, a.linkLinked, a.linkMessageTrad {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+a.linkSocialMedia:hover, a.linkLinked:hover, a.linkMessageTrad:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+mat-toolbar.coolToolBar {
+    background: #272727;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.socialMediaContainer {
+    margin-top: 45px;
+}
+ h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;    
+}
+.contactContainer {
+    width: 550px;
+    margin: 50px auto;
+}

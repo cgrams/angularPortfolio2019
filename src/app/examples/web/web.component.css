@@ -1,0 +1,16 @@
+svg#animateWeb {
+    position: relative;
+    bottom: 30px;
+    stroke-width:20;
+    fill: url(#radialWeb);
+    transition: all 1s ease;
+    border: 2px solid white;
+    height: 250px;
+}
+
+svg#animateWeb:hover{
+	fill: red;
+	stroke: white;
+	stroke-width: 50px;
+    background: #170808;
+}

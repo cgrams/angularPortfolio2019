@@ -1,0 +1,44 @@
+<div class='formContainer'>
+	<form #formCG="ngForm" (ngSubmit)="submitForm('showThankYouTrue', formCG)" novalidate *ngIf="!submitted">
+		<div class="inputSectionCacher" id="cacheMoi">
+			<label for="lasttName">Cacher </label>		
+			<input [value]="cacher" id="cacher" required="false" class="form-control" maxlength="10"/>
+		</div>	
+		<div class="inputSection">
+			<label for="firstName">First Name<span *ngIf="!firstNameBool.valid" id="reqStar">*</span></label>
+			<input pattern="[a-zA-Z ]*" #firstNameBool="ngModel" [(ngModel)]="first" name="firstNameName" minlength="2" maxlength="40" id="firstName" required="true" type="text" (click)="clearField('firstName', '*')" (keydown)="clearField('firstName', '*')" class="form-control" >
+		</div>
+		<div [hidden]='firstNameBool.valid || firstNameBool.untouched' class="validRequire">Please enter a valid name...</div>
+		<div class="inputSection">
+			<label for="lastName">Last Name<span *ngIf="!lastNameBool.valid" id="reqStar2">*</span></label>		
+			<input pattern="[a-zA-Z ]*"  #lastNameBool="ngModel" [(ngModel)]="last" [value]="last" name="lastNameName" id="lastName" minlength="2" maxlength="40" required="true" (keydown)="clearField('lastName', '*')" (click)="clearField('lastName', '*')" class="form-control"/>
+		</div>
+		<div [hidden]='lastNameBool.valid || lastNameBool.untouched' class="validRequire">Please enter a valid lastname...</div>
+		<div class="inputSection">
+			<label for="emailField">Email<span *ngIf="!emailBool.valid" id="reqStar">*</span></label>
+			<input [value]="email" email name="emailName" type="email" #emailBool="ngModel" [(ngModel)]="email" minlength="5" maxlength="50" id="emailField" required="false" (keydown)="clearField('emailField', '*')" (click)="clearField('emailField', '*')" class="form-control">
+		</div>
+		<div [hidden]='emailBool.valid || emailBool.untouched' class="validRequire">Please enter a valid email address...</div>		
+		<div class="inputSection">
+			<textarea rows="4" name="textareaName" class="form-control" maxlength="175" id="textParaField" required="true"  cols="50" (keydown)="clearField('textParaField', ' Tell me how I can help...')" (click)="clearField('textParaField', ' Tell me how I can help...')" [value]="tellMe"></textarea>
+		</div>
+		<br />
+
+		<div *ngIf="(formCG.touched && !formCG.valid) " class="submitButtonGray">
+			<span>Almost done...</span>
+		</div>
+
+		<span *ngIf="!formCG.valid">Complete Form before submiting.</span>
+		
+		<button type="submit" *ngIf="formCG.valid" mat-button class="submitButton" disabled="{{trueFalse}}">
+			<span>Submit</span>
+		</button>
+	</form>
+	<div [@fadeInThanks]='state' id="thnkYouContainer" class="thankYouStyle" >
+		<h3 class="thankYou" id="thankYouFadeIn">  Sorry {{first}}, there was an error in submitting your form. </h3>
+	</div>
+</div>
+
+
+
+ 

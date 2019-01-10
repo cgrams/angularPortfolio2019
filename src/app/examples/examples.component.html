@@ -1,0 +1,39 @@
+<h2>
+	<span class="sizeOfLargerText">W</span>
+	<span class="smallerTitle">EB </span>
+	<span class="sizeOfLargerText">P</span>
+	<span class="smallerTitle">ROJECTS</span>
+</h2>
+
+<div class="examplesContainer">
+	<div class="codingContainer" >
+		<h4 (click)="showCodeState('showThankYouTrue');">Code</h4>
+		<app-code (click)="showCodeState('showThankYouTrue');"></app-code>
+		<span class="spanListColumn" [@listCode]='state'>
+			<a class="excamplesChoicesSub" target="_blank" href="http://melbourne-website-designer.com/redSpy/index.php">&#9632; Red Spy Game</a>
+			<a class="excamplesChoicesSub" target="_blank" href="http://hiddensigns.melbourne-website-designer.com/">&#9632; Hidden Signs Game</a>
+			<a class="excamplesChoicesSub" target="_blank" href="http://melbourne-website-designer.com/winstonDrum/drum.html">&#9632; Winston Drum Machine</a>			
+		</span>	
+	</div>
+	<div class="artContainer">
+		<h4 (click)="showGraphicsState('showThankYouTrue2');">Graphics</h4>
+		<app-graphics (click)="showGraphicsState('showThankYouTrue2');"></app-graphics>
+		<span class="spanListColumn" [@listGraphics]='state2'>
+			<a class="excamplesChoicesSub" href="http://melbourne-website-designer.com/logos/">&#9632; Logos</a>			
+			<a class="excamplesChoicesSub" href="http://melbourne-website-designer.com/angularPortraits/">&#9632; Self Portraits</a>
+			<a class="excamplesChoicesSub" href="http://melbourne-website-designer.com/animatedGIfs/">&#9632; Animated Gifs</a>
+		</span>			
+	</div>
+	<div class="webProjectsContainer">
+		<h4 (click)="showWebState('showThankYouTrue3');">Web</h4>
+		<app-web (click)="showWebState('showThankYouTrue3');"></app-web>
+		<span class="spanListColumn" [@listProjects]='state3'>
+			<a class="excamplesChoicesSub" target="_blank" href="https://www.agribin.com.au/">&#9632; Agribin</a>
+			<a class="excamplesChoicesSub" target="_blank" href="http://cyanergy.com.au/">&#9632; Cynergy</a>
+			<a class="excamplesChoicesSub" target="_blank" href="https://www.abbottbuild.com.au/">&#9632; Abbott Build</a>
+			<a class="excamplesChoicesSub" target="_blank" href="./assets/aviationBOMVolcanicAshVASEA.jpg">&#9632; BOM Aviation App</a>
+			<a class="excamplesChoicesSub" target="_blank" href="http://www.bom.gov.au/water/landscape/">&#9632; BOM Water Balance</a>
+			<a class="excamplesChoicesSub" target="_blank" href="http://portwebsolutions.com.au">&#9632; Port Web Solutions</a>			
+		</span>			
+	</div>
+</div>

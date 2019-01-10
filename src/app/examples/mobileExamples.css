@@ -1,0 +1,12 @@
+@media all and (max-width: 1050px) { 
+
+	div.examplesContainer {
+	    display: block ;
+	}
+
+	app-code, app-graphics, app-web{
+    	height: 230px;
+	}	
+
+ }
+ 

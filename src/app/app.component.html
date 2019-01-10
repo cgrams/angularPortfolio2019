@@ -1,0 +1,50 @@
+<mat-sidenav-container class="example-container" >
+	  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+		<ul class="sideNaveList">
+			<li class="listChoice" id="aboutChoice" [scrollTo]="'#BioScroll'" [scrollDuration]="500" [scrollOffset]="-50">
+				About
+			</li>
+			<li class="listChoice" id="experienceChoice" [scrollTo]="'#SkillsScroll'" [scrollDuration]="500" [scrollOffset]="-5">
+				Skills
+			</li>
+			<li class="listChoice" id="skillsChoice" [scrollTo]="'#ExamplesScroll'" [scrollDuration]="500" [scrollOffset]="-5">
+				Web Projects
+			</li>
+			<li class="listChoice" id="examplesChoice" [scrollTo]="'#TimeLineScroll'" [scrollDuration]="500" [scrollOffset]="-5">
+				Timeline
+			</li>
+			<li class="listChoice" id="examplesChoice" [scrollTo]="'#ContactScroll'" [scrollDuration]="500" [scrollOffset]="-5">
+				Contact
+			</li>			
+		</ul>		
+	  </mat-sidenav>
+
+	<mat-sidenav-content >
+
+		<div class="appContainer" >
+			<app-menu (click)="sidenav.toggle()"></app-menu>
+			<app-butterfly class="majorSection1" ></app-butterfly>
+			<app-title-section class="majorSection2" id="desktopTitle" @fadeInMoveFast></app-title-section>
+			<app-title-section class="majorSectionMobile" id="mobileTitle"></app-title-section>
+			
+			<main id="BioScroll" class="aboutMeFormSection majorSection3" @fadeInFast >
+				<div class="picContainer">
+					<img [src]="changePicProfile" class="profesionalImage" alt="Dapper picture of CG with glasses and buisness suit.">
+				</div>
+				<app-bio [@fadeBioScroll]='stateBio' ></app-bio>
+			</main>
+
+			<app-skills id="SkillsScroll" class="majorSection4" @fadeInFast></app-skills>
+			
+			<app-examples id="ExamplesScroll" class="majorSection6"></app-examples>
+
+			<app-linehistory id="TimeLineScroll" class="majorSection5" ></app-linehistory>
+			
+			<app-contact id="ContactScroll"></app-contact>
+		</div>
+
+	</mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<app-footer @fadeInFast></app-footer>

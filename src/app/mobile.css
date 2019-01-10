@@ -1,0 +1,50 @@
+@media all and (max-width: 1050px) { 
+	app-skills{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1%;
+    padding: 0;
+	}
+
+	app-title-section#desktopTitle{
+	    display: none;
+	}
+	app-title-section{
+    	grid-column-start: 1;
+    	grid-column-end: 3;
+	}	
+	#mobileTitle div div#my-sticky-element {
+	    width: 100%;
+	    text-align: center;
+	}
+	.picContainer{
+		display: none;
+	}
+	.aboutMeFormSection{
+	    grid-template-columns: 20px auto 20px;
+	}	
+	app-bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	}	
+	
+}
+ 
+ 
+@media all and (min-width: 1050px) { 
+	app-title-section#desktopTitle{
+	    display: block;
+	}
+	app-title-section#mobileTitle {
+    	display: none;
+	}
+	.picContainer{
+		display: flex;
+	}	
+.aboutMeFormSection {
+        height: 545px;
+	}
+
+}

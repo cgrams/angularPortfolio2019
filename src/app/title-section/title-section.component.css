@@ -1,0 +1,36 @@
+@media all and (max-width: 1050px) { 
+
+	div#my-sticky-element {
+    	width: 100%;
+    	text-align: center;
+    	position: relative;
+    	z-index: 3;    	
+	}	
+
+    div div h1.websiteTitle span {
+        font-size: 18px;
+    }
+
+}
+
+h1.websiteTitle {
+    position: relative;
+}
+.titleSection {
+    display: flex;
+    align-items: flex-end;
+}
+span.colorRed {
+    color: #c33329;
+}
+
+.titleSection {
+    min-height: 50%;
+}
+
+span.smallUpperCase {
+    font-size: 23px;
+    margin-right: 10px;
+    font-weight: 100;
+}
+

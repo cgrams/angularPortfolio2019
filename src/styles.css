@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-display: swap;
+    background: black;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    width: 100%;
+	overflow-x: hidden;
+	margin: 0;   
+}
+
+div .mat-tooltip {
+    font-size: 14px;
+}
+
