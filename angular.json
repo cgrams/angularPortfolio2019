@@ -26,7 +26,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "dist/vivus.min.js"
+              "src/assets/vivus.min.js"
             ]
           },
           "configurations": {
